@@ -3,7 +3,7 @@
  * @constructor
  */
  /*
- * I have assumed the origin of the cylinder to be the center and it will grow up (y+)
+ * I have assumed the origin of the cylinder to be the center and it will grow up (z+)
  */
  function cylinder(scene, height, br, tr, stacks, slices) { //4, 2, 0.5, 4, 8 -testCyllinder
  	CGFobject.call(this,scene);
@@ -20,6 +20,7 @@
  cylinder.prototype = Object.create(CGFobject.prototype);
  cylinder.prototype.constructor = cylinder;
 
+//this code is adapted from the CGRA project also performed by this group
  cylinder.prototype.initBuffers = function() {
 
 	this.vertices = [];
