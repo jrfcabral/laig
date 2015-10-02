@@ -61,7 +61,7 @@ XMLscene.prototype.onGraphLoaded = function ()
 	this.camera.far = this.graph.frustumFar;
 	
 
-	this.gl.clearColor(this.graph.bgLight[0] || 1.0,this.graph.bgLight[1] || 0.5, this.graph.bgLight[2],this.graph.bgLight[3] || 0.3);
+	this.gl.clearColor(this.graph.bgLight[0] ,this.graph.bgLight[1], this.graph.bgLight[2],this.graph.bgLight[3]);
 
 
 	for(var i = 0; i < ((this.graph.lightsNum > 8)? 8:this.graph.lightsNum); i++){

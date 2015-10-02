@@ -318,9 +318,9 @@ MySceneGraph.prototype.parseInitials=function(initials){
 	
 
 	//initial translate processing
-	var initTrans = initials.getElementsByTagName('translate');
+	var initTrans = initials.getElementsByTagName('translation');
 	if(initTrans == null || initTrans.length != 1){
-		this.errors.push('Missing translate tag or multiple translate tags found.');
+		this.errors.push('Missing transltion tag or multiple translation tags found.');
 	}
 	else{
 		this.initTransx = this.reader.getFloat(initTrans[0], 'x', ['x', 'y', 'z']);
